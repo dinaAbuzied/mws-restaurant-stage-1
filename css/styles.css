@@ -81,6 +81,23 @@ section {
 }
 
 
+/* ====================== Accessibility ====================== */
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #BF1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+
 /* ====================== Navigation ====================== */
 
 nav {
@@ -382,6 +399,9 @@ nav h1 a {
 #restaurant-hours td {
     color: #666;
 }
+
+
+/* ====================== Responsive ====================== */
 
 @media (max-width:1000px) {
     #reviews-container {
