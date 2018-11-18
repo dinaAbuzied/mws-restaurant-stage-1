@@ -45,5 +45,16 @@
     </footer>
 
 </body>
+<!-- Register a service worker -->
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/js/service_worker.js')
+                .then(function() {
+                    console.log("Service Worker Registered");
+                });
+        });
+    }
+</script>
 
 </html>
